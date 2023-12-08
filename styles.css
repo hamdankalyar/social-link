@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('SatoshiBlack.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Array';
+    src: url('Array.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #151617;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+    width: 94%;
+    max-width: 500px;
+    padding: 20px 1px 40px;
+    border-radius: 57.5px;
+    background-color: #121314;
+    display: center;
+    border: 1px solid #ffffff0d;
+    border-width: 1.5px;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    margin-top: -76px;
+}
+
+.username {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0 0;
+    font-weight: 650;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+}
+
+.username-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.biography {
+    font-size: 16px;
+    color: rgba(216, 216, 216, 0.75);
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 300;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.line {
+    width: 80%;
+    margin: 10px auto;
+    border: 0.5px solid rgba(216, 216, 216, 0.5);
+    opacity: 0.1;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-icon {
+    
+    color: #fff;
+    font-size: 29px;
+    transition: color 0.3s ease;
+}
+
+.social-item {
+  width: 46px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon:hover {
+    color: #00a2ff;
+}
+
+.discord {
+    color: #5865F2;
+    filter: drop-shadow(2px 2px 7px #5865F2);
+    transition: all .2s ease-in-out
+  }
+  
+  .tiktok { 
+    font-size: 36.5px!important;
+    margin-left: -5.5px!important;
+    color: #F7F7F7;
+    filter: drop-shadow(2px 2px 7px #F7F7F7);
+    transition: all .2s ease-in-out
+  }
+  
+  .github {
+    color: #696969;
+    filter: drop-shadow(2px 2px 7px #696969);
+    transition: all .2s ease-in-out
+  }
+  
+  .spotify {
+    color: #1DB954;
+    filter: drop-shadow(2px 2px 7px #1DB954);
+    transition: all .2s ease-in-out
+  }
+  
+  .instagram {
+    color: #d62976;
+    filter: drop-shadow(2px 2px 7px #d62976);
+    transition: all .2s ease-in-out
+  }
+  
+  .twitter {
+    color: #1DA1F2;
+    filter: drop-shadow(2px 2px 7px #1DA1F2);
+    transition: all .2s ease-in-out
+  }
+  
+  .paypal {
+    color: #002E83;
+    filter: drop-shadow(2px 2px 7px #002E83);
+    transition: all .2s ease-in-out
+  }
+  
+  .telegram {
+    color: #2E9CD6;
+    filter: drop-shadow(2px 2px 7px #2E9CD6);
+    transition: all .2s ease-in-out;
+    margin-left: -4px;
+  }
+  
+  .youtube {
+    color: #ff0000e1;
+    filter: drop-shadow(2px 2px 7px #ff0000e1);
+    transition: all .2s ease-in-out
+  }
+  
+  .twitch {
+    color: #3000a1b4;
+    filter: drop-shadow(2px 2px 7px #3000a1e1);
+    transition: all .2s ease-in-out
+  }
+  
+  .steam {
+    color: #07095f;
+    filter: drop-shadow(2px 2px 7px #07085f80);
+    transition: all .2s ease-in-out
+  }
+  
+  .snapchat {
+    color: #faf765;
+    filter: drop-shadow(2px 2px 7px #faf765);
+    transition: all .2s ease-in-out
+  }
+  
+  .soundcloud {
+    color: #a57e12;
+    filter: drop-shadow(2px 2px 7px #a57e12);
+    transition: all .2s ease-in-out
+  }
+
+  .crypto {
+    color: #a57e12;
+    filter: drop-shadow(2px 2px 7px #a57e12);
+    transition: all .2s ease-in-out
+  }
+  
+  .youtube:hover,
+  .tiktok:hover,
+  .kick:hover,
+  .steam:hover,
+  .github:hover,
+  .telegram:hover,
+  .instagram:hover,
+  .snapchat:hover,
+  .facebook:hover,
+  .paypal:hover,
+  .crypto:hover,
+  .custom:hover,
+  .cashapp:hover,
+  .twitter:hover,
+  .bitcoin:hover,
+  .discord:hover { 
+    transform: scale(1.12);
+  }
+
+  .eye-container {
+    position: fixed !important;
+    bottom: -7px;
+    left: 20px;
+    background-color: #ffffff0d;
+    border: 1px solid #ffffff0d;
+    border-width: 1.5px;
+    border-radius: 48.6px;
+    display: flex;
+    padding: 2.5px 10px 1.5px;
+    cursor: pointer;
+    margin: 2px 10px 20px auto;
+}
+
+.eye-icon {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.eye-container:hover {
+    background-color: #ffffff0d;
+    border-color: #ffffff0d;
+}
+
+.eye-container:hover .eye-icon {
+    color: #ffffffb4;
+}
+
+.eye-number {
+    margin-left: 5px;
+    font-size: 18.12px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    transition: opacity 0.5s ease;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .glow {
+    filter: drop-shadow(1px 1px 5px #ffffff)!important;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .mute-pause-ctnr {
+    position: fixed;
+    width: 41px;
+    height: 41px;
+    top: 9px;
+    left: 10px;
+    background-color: #161616de;
+    border-radius: 7px;
+    display: flex;
+    border: 1px solid #ffffff0d;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+    background-color: #ffffff0d;
+}
+  
+  
+  .mute-pause-ctnr:hover i {
+    color: rgb(204, 204, 204);
+    animation: none;
+  }
+
+  .enter {
+    animation: up 2s;
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: 300;
+    color: white;
+    transition: opacity 0.5s ease;
+  }
+  
+  .proceed-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(218, 30, 30);
+    position: fixed;
+  }
+  
+  .proceed-button:hover {
+    transform: scale(1.12);
+  }
+  
+  .sparkle {
+    background-image: url(https://cdn.discordapp.com/attachments/975129514499772516/1043554950350897242/sparkle.gif);
+    color: white;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    background-color: rgba(0,0,0,.775)!important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  #playButton, #pauseButton {
+    background-color: #3b3b3b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .mute-pause-ctnr i {
+    color: rgb(255 255 255);
+    font-size: 17px;
+    transition: color 0.3s;
+  }
+  
+  .mute-pause-ctnr:hover i {
+    color: rgb(204, 204, 204);
+    animation: none;
+  }
+  
+  #vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+@media (min-width: 768px) {
+    .container {
+        width: 500px;
+        margin-top: 0;
+    }
+}

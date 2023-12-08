@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Container</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+</div>
+<audio loop="" preload="auto" id="audio">
+    <source src="https://cdn.discordapp.com/attachments/1099387636264730644/1179679650457337887/DeeBaby_Ft_Mg_Lil_Bubba_-_Going_Big.mp3?ex=657aa94a&is=6568344a&hm=b2cd95ce787b8b3e1f33c9b567b0e2efd98951452070498f1f1d960f648bfe7c&"!important type="audio/mp3">
+  </audio>
+
+</div>
+<video id="vid" autoplay loop muted playsinline id>
+  <source src="" type="video/mp4">
+</video>
+<div class="mute-pause-ctnr">
+    <i class="fas fa-pause"></i>
+  </div>
+
+<div class="overlay" id="overlay">
+  <div class="proceed-button" onclick="removeOverlay(); playMusic()"><p class="enter" style="font-family: 'Array'; color: rgb(255, 255, 255) !important;">[CLICK HERE]</span></p></div>
+</div>
+<body>
+    <style>
+        body {
+          background-color: #09090b!important;
+          color: #bb68e29c;
+          background-image:url('https://media.tenor.com/_64uTl-XM5EAAAAC/juice-wrld.gif'); background-size: cover; background-repeat:repeat;
+      }
+  * {
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur) 16 16, auto !important;
+    }
+      </style>
+    <div class="container" style="backdrop-filter: blur(52px); background-color: rgba(0, 0, 0, 0.1) !important;">
+        <div class="username-container">
+            <div class="profile-container">
+                <img class="profile-picture" src="https://media.tenor.com/SHt_qTrwxtcAAAAd/hide-sink.gif" alt="">
+            </div>
+            <p class="username sparkle" style="color: rgb(255, 255, 255) !important;">✞</p>
+            <p class="biography" style="color: rgba(255, 255, 255, 0.5) !important;">ily | </p>
+            <hr class="line">
+            <div class="social-container">
+              <a href="YOUR_YOUTUBE_LINK" class="social-icon youtube" aria-label="YouTube">
+                <span class="iconify" data-icon="entypo-social:youtube"></span>
+            </a>
+            <a href="YOUR_TELEGRAM_LINK" class="social-icon telegram" aria-label="Telegram">
+                <span class="iconify" data-icon="file-icons:telegram"></span>
+            </a>
+            <a href="YOUR_KICK_LINK" class="social-icon kick" aria-label="Kick">
+                <span class="iconify" data-icon="ri:kick-line"></span>
+            </a>
+            <a href="YOUR_STEAM_LINK" class="social-icon steam" aria-label="Steam">
+                <span class="iconify" data-icon="mdi:steam"></span>
+            </a>
+            <a href="YOUR_TIKTOK_LINK" class="social-icon tiktok" aria-label="TikTok">
+                <span class="iconify" data-icon="ic:round-tiktok"></span>
+            </a>
+            <a href="YOUR_GITHUB_LINK" class="social-icon github" aria-label="GitHub">
+                <span class="iconify" data-icon="fontisto:github"></span>
+            </a>
+            <a href="YOUR_SNAPCHAT_LINK" class="social-icon snapchat" aria-label="Snapchat">
+                <span class="iconify" data-icon="basil:snapchat-solid"></span>
+            </a>
+            <a href="YOUR_FACEBOOK_LINK" class="social-icon facebook" aria-label="Facebook">
+                <span class="iconify" data-icon="mdi:facebook"></span>
+            </a>
+            <a href="YOUR_PAYPAL_LINK" class="social-icon paypal" aria-label="PayPal">
+                <span class="iconify" data-icon="ic:twotone-paypal"></span>
+            </a>
+            <a href="YOUR_CASHAPP_LINK" class="social-icon cashapp" aria-label="CashApp">
+                <span class="iconify" data-icon="simple-icons:cashapp"></span>
+            </a>
+            <a href="YOUR_CUSTOM_LINK" class="social-icon custom" aria-label="Custom">
+                <span class="iconify" data-icon="pajamas:earth"></span>
+            </a>
+            <a href="YOUR_INSTAGRAM_LINK" class="social-icon instagram" aria-label="Instagram">
+                <span class="iconify" data-icon="ri:instagram-fill"></span>
+            </a>
+            <a href="YOUR_DISCORD_LINK" class="social-icon discord" aria-label="Discord">
+                <span class="iconify" data-icon="akar-icons:discord-fill"></span>
+            </a>           
+                <!-- Add more social icons as needed -->
+                <div class="eye-container">
+                    <div class="eye-icon">
+                        <span class="iconify" data-icon="feather:eye"></span>
+                    </div>
+                    <span class="eye-number">50</span>
+                </div> 
+                <div></div>                          
+            </div>
+        </div>
+    </div>
+    <style>
+  .steam,
+  .tiktok,
+  .kick,
+  .telegram,
+  .twitter,
+  .instagram,
+  .github,
+  .youtube,
+  .discord,
+  .snapchat,
+  .custom,
+  .facebook,
+  .paypal,
+  .crypto,
+  .cashapp,
+  .steam {
+    color: #ffffff !important;
+    filter: drop-shadow(1px 1px 5px #ffffff) !important;
+  }
+</style>
+ <!-- MUSIC SCRIPT -->
+ <script>
+    const iconContainer = document.querySelector(".mute-pause-ctnr");
+    const icon = iconContainer.querySelector("i");
+    let isPaused = true;
+    const audio = document.getElementById("audio");
+    
+    iconContainer.addEventListener("click", () => {
+    if (isPaused) {
+      icon.classList.remove("fa-pause");
+      icon.classList.add("fa-play");
+      audio.pause();
+    } else {
+      icon.classList.remove("fa-play");
+      icon.classList.add("fa-pause");
+      audio.play();
+    }
+    
+    isPaused = !isPaused;
+    });
+    
+    function removeOverlay() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
+    audio.play();
+    isPaused = false;
+    icon.classList.remove("fa-play");
+    icon.classList.add("fa-pause");
+    }
+    </script>
+
+    </style>
+    <!-- EYE VISIBILITY SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var eyeContainer = document.querySelector('.eye-container');
+            var eyeNumber = document.querySelector('.eye-number');
+
+            eyeNumber.style.display = 'none';
+
+            eyeContainer.addEventListener('click', function () {
+                eyeNumber.style.display = eyeNumber.style.display === 'none' ? 'block' : 'none';
+                setTimeout(function () {
+                    eyeNumber.style.display = 'none';
+                }, 5000);
+            });
+        });
+    </script>
+     <!-- TITLE SCRIPT -->
+<script>
+    let counter = 0;
+    let Title = '@<%= profile.userID %>';
+    let direction = true;
+    aniTitle = setInterval(function() {
+        if (counter == Title.length) direction = false;
+        if (counter == false) direction = true;
+        counter = (direction == true) ? ++counter : --counter;
+        newtitle = (counter == 0) ? "" : Title.slice(0, counter);
+        document.title = 'twiz.lol ~ ' + newtitle;
+    }, 380)
+  </script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Container</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+        @font-face {
+            font-family: 'Satoshi';
+            src: url('SatoshiBlack.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Array';
+            src: url('Array.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #151617;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .container {
+            width: 94%;
+            max-width: 500px;
+            padding: 20px 1px 40px;
+            border-radius: 57.5px;
+            background-color: #121314;
+            display: center;
+            border: 1px solid #ffffff0d;
+            border-width: 1.5px;
+        }
+
+        .profile-container {
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 5px;
+            margin-top: -76px;
+        }
+
+        .username {
+            font-size: 35px;
+            color: #ffffff;
+            text-align: center;
+
+            font-weight: 650;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-style: normal;
+
+        }
+
+        .username-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+        }
+
+        .biography {
+            font-size: 16px;
+            color: rgba(216, 216, 216, 0.75);
+            text-align: center;
+            margin: 10px 0;
+            font-weight: 300;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .line {
+            width: 80%;
+            margin: 10px auto;
+            border: 0.5px solid rgba(216, 216, 216, 0.5);
+            opacity: 0.1;
+        }
+
+        .social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+
+            color: #fff;
+            font-size: 29px;
+            transition: color 0.3s ease;
+        }
+
+        .social-item {
+            width: 46px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icon:hover {
+            color: #00a2ff;
+        }
+
+        .discord {
+            color: #5865F2;
+            filter: drop-shadow(2px 2px 7px #5865F2);
+            transition: all .2s ease-in-out
+        }
+
+        .tiktok {
+            font-size: 36.5px !important;
+            margin-left: -5.5px !important;
+            color: #F7F7F7;
+            filter: drop-shadow(2px 2px 7px #F7F7F7);
+            transition: all .2s ease-in-out
+        }
+
+        .github {
+            color: #696969;
+            filter: drop-shadow(2px 2px 7px #696969);
+            transition: all .2s ease-in-out
+        }
+
+        .spotify {
+            color: #1DB954;
+            filter: drop-shadow(2px 2px 7px #1DB954);
+            transition: all .2s ease-in-out
+        }
+
+        .instagram {
+            color: #d62976;
+            filter: drop-shadow(2px 2px 7px #d62976);
+            transition: all .2s ease-in-out
+        }
+
+        .twitter {
+            color: #1DA1F2;
+            filter: drop-shadow(2px 2px 7px #1DA1F2);
+            transition: all .2s ease-in-out
+        }
+
+        .paypal {
+            color: #002E83;
+            filter: drop-shadow(2px 2px 7px #002E83);
+            transition: all .2s ease-in-out
+        }
+
+        .telegram {
+            color: #2E9CD6;
+            filter: drop-shadow(2px 2px 7px #2E9CD6);
+            transition: all .2s ease-in-out;
+            margin-left: -4px;
+        }
+
+        .youtube {
+            color: #ff0000e1;
+            filter: drop-shadow(2px 2px 7px #ff0000e1);
+            transition: all .2s ease-in-out
+        }
+
+        .twitch {
+            color: #3000a1b4;
+            filter: drop-shadow(2px 2px 7px #3000a1e1);
+            transition: all .2s ease-in-out
+        }
+
+        .steam {
+            color: #07095f;
+            filter: drop-shadow(2px 2px 7px #07085f80);
+            transition: all .2s ease-in-out
+        }
+
+        .snapchat {
+            color: #faf765;
+            filter: drop-shadow(2px 2px 7px #faf765);
+            transition: all .2s ease-in-out
+        }
+
+        .soundcloud {
+            color: #a57e12;
+            filter: drop-shadow(2px 2px 7px #a57e12);
+            transition: all .2s ease-in-out
+        }
+
+        .crypto {
+            color: #a57e12;
+            filter: drop-shadow(2px 2px 7px #a57e12);
+            transition: all .2s ease-in-out
+        }
+
+        .youtube:hover,
+        .tiktok:hover,
+        .kick:hover,
+        .steam:hover,
+        .github:hover,
+        .telegram:hover,
+        .instagram:hover,
+        .snapchat:hover,
+        .facebook:hover,
+        .paypal:hover,
+        .crypto:hover,
+        .custom:hover,
+        .cashapp:hover,
+        .twitter:hover,
+        .bitcoin:hover,
+        .discord:hover {
+            transform: scale(1.12);
+        }
+
+        .eye-container {
+            position: fixed !important;
+            bottom: -7px;
+            left: 20px;
+            background-color: #ffffff0d;
+            border: 1px solid #ffffff0d;
+            border-width: 1.5px;
+            border-radius: 48.6px;
+            display: flex;
+            padding: 2.5px 10px 1.5px;
+            cursor: pointer;
+            margin: 2px 10px 20px auto;
+        }
+
+        .eye-icon {
+            color: #ffffff;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .eye-container:hover {
+            background-color: #ffffff0d;
+            border-color: #ffffff0d;
+        }
+
+        .eye-container:hover .eye-icon {
+            color: #ffffffb4;
+        }
+
+        .eye-number {
+            margin-left: 5px;
+            font-size: 18.12px;
+            color: #ffffff;
+            transition: color 0.3s ease;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: 500;
+            transition: opacity 0.5s ease;
+        }
+
+        #backgroundVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .glow {
+            filter: drop-shadow(1px 1px 5px #ffffff) !important;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .mute-pause-ctnr {
+            position: fixed;
+            width: 41px;
+            height: 41px;
+            top: 9px;
+            left: 10px;
+            background-color: #161616de;
+            border-radius: 7px;
+            display: flex;
+            border: 1px solid #ffffff0d;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+            background-color: #ffffff0d;
+        }
+
+
+        .mute-pause-ctnr:hover i {
+            color: rgb(204, 204, 204);
+            animation: none;
+        }
+
+        .enter {
+            animation: up 2s;
+            font-size: 24px;
+            margin-top: 30px;
+            font-weight: 300;
+            color: white;
+            transition: opacity 0.5s ease;
+        }
+
+        .proceed-button {
+            background-color: transparent;
+            border: none;
+            color: rgb(218, 30, 30);
+            position: fixed;
+        }
+
+        .proceed-button:hover {
+            transform: scale(1.12);
+        }
+
+        .sparkle {
+            background-image: url(https://cdn.discordapp.com/attachments/975129514499772516/1043554950350897242/sparkle.gif);
+            color: white;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            backdrop-filter: blur(13px);
+            -webkit-backdrop-filter: blur(13px);
+            background-color: rgba(0, 0, 0, .775) !important;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        #playButton,
+        #pauseButton {
+            background-color: #3b3b3b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .mute-pause-ctnr i {
+            color: rgb(255 255 255);
+            font-size: 17px;
+            transition: color 0.3s;
+        }
+
+        .mute-pause-ctnr:hover i {
+            color: rgb(204, 204, 204);
+            animation: none;
+        }
+
+        #vid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 500px;
+                margin-top: 0;
+            }
+        }
+
+        body {
+            background-color: #09090b !important;
+            color: #bb68e29c;
+            background-image: url('https://media.tenor.com/_64uTl-XM5EAAAAC/juice-wrld.gif');
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        * {
+            cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur) 16 16, auto !important;
+        }
+
+        .container {
+            backdrop-filter: blur(52px);
+            background-color: rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .steam,
+        .tiktok,
+        .kick,
+        .telegram,
+        .twitter,
+        .instagram,
+        .github,
+        .youtube,
+        .discord,
+        .snapchat,
+        .custom,
+        .facebook,
+        .paypal,
+        .crypto,
+        .cashapp,
+        .steam {
+            color: #ffffff !important;
+            filter: drop-shadow(1px 1px 5px #ffffff) !important;
+        }
+
+        .discord-widget {
+            background-color: #2C2D32;
+            width: 70%;
+            margin: 10px auto;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            border-radius: 12px
+        }
+
+        .discord-widget img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
+
+        .discord-heading-box {
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 40px;
+        }
+
+        .discord-widget span {
+            font-size: 15px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .discord-icons {
+            font-size: 10px;
+        }
+
+        .badges-name {
+            display: flex;
+            align-items: center;
+            height: 30px;
+
+
+        }
+
+        .badge-container {
+            display: flex;
+            background-color: #191B1D;
+            align-items: center;
+            height: 25px;
+            border-radius: 10px;
+            width: 100px;
+            justify-content: space-evenly;
+            margin-left: 20px;
+        }
+
+        .fixer {
+            width: 260px;
+
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="backdrop-filter: blur(52px); background-color: rgba(0, 0, 0, 0.1) !important;">
+        <div class="username-container">
+            <div class="profile-container">
+                <img class="profile-picture" src="https://media.tenor.com/SHt_qTrwxtcAAAAd/hide-sink.gif" alt="">
+            </div>
+            <div class="fixer">
+
+                <div class="badges-name">
+                    <p class="username sparkle" style="color: rgb(255, 255, 255) !important;">✞</p>
+                    <div class="badge-container">
+                        <img src="./badges/gif/og.GIF" width="16px" height="16px" alt="OG">
+                        <img src="./badges/gif/developer.GIF" width="16px" height="16px" alt="OG">
+                        <img src="./badges/gif/premium.GIF" width="16px" height="16px" alt="OG">
+                        <img src="./badges/gif/staff.GIF" width="16px" height="16px" alt="OG">
+                    </div>
+
+                </div>
+            </div>
+            <p class="biography" style="color: rgba(255, 255, 255, 0.5) !important;">ily | </p>
+            <hr class="line">
+            <div class="social-container">
+                <div class="social-item">
+                    <a href="YOUR_YOUTUBE_LINK" class="social-icon youtube" aria-label="YouTube">
+                        <span class="iconify" data-icon="entypo-social:youtube"></span>
+                    </a>
+                </div>
+
+                <div class="social-item">
+                    <a href="YOUR_TELEGRAM_LINK" class="social-icon telegram" aria-label="Telegram">
+                        <span class="iconify" data-icon="file-icons:telegram"></span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="YOUR_KICK_LINK" class="social-icon kick" aria-label="Kick">
+                        <span class="iconify" data-icon="ri:kick-line"></span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="YOUR_STEAM_LINK" class="social-icon steam" aria-label="Steam">
+                        <span class="iconify" data-icon="mdi:steam"></span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="YOUR_TIKTOK_LINK" class="social-icon tiktok" aria-label="TikTok">
+                        <span class="iconify" data-icon="ic:round-tiktok"></span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="YOUR_GITHUB_LINK" class="social-icon github" aria-label="GitHub">
+                        <span class="iconify" data-icon="fontisto:github"></span>
+                    </a>
+                </div>
+                <div class="social-item"><a href="YOUR_SNAPCHAT_LINK" class="social-icon snapchat"
+                        aria-label="Snapchat">
+                        <span class="iconify" data-icon="basil:snapchat-solid"></span>
+                    </a></div>
+                <div class="social-item"><a href="YOUR_FACEBOOK_LINK" class="social-icon facebook"
+                        aria-label="Facebook">
+                        <span class="iconify" data-icon="mdi:facebook"></span>
+                    </a></div>
+                <div class="social-item"><a href="YOUR_PAYPAL_LINK" class="social-icon paypal" aria-label="PayPal">
+                        <span class="iconify" data-icon="ic:twotone-paypal"></span>
+                    </a></div>
+                <div class="social-item"><a href="YOUR_CASHAPP_LINK" class="social-icon cashapp" aria-label="CashApp">
+                        <span class="iconify" data-icon="simple-icons:cashapp"></span>
+                    </a></div>
+                <div class="social-item"><a href="YOUR_CUSTOM_LINK" class="social-icon custom" aria-label="Custom">
+                        <span class="iconify" data-icon="pajamas:earth"></span>
+                    </a></div>
+                <div class="social-item">
+                    <a href="YOUR_INSTAGRAM_LINK" class="social-icon instagram" aria-label="Instagram">
+                        <span class="iconify" data-icon="ri:instagram-fill"></span>
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="YOUR_DISCORD_LINK" class="social-icon discord" aria-label="Discord">
+                        <span class="iconify" data-icon="akar-icons:discord-fill"></span>
+                    </a>
+                </div>
+                <!-- Add more social icons as needed -->
+
+            </div>
+        </div>
+        <div class="discord-widget">
+            <img src="avatar.jpeg" alt="">
+            <div class="discord-heading-box">
+                <span>Wiz6</span>
+                <div class="discord-icons">
+                    <span class="iconify" data-icon="ic:round-tiktok"></span>
+                    <span class="iconify" data-icon="ic:round-tiktok"></span>
+                </div>
+            </div>
+        </div>
+        <div class="eye-container">
+            <div class="eye-icon">
+                <span class="iconify" data-icon="feather:eye"></span>
+            </div>
+            <span class="eye-number">50</span>
+        </div>
+
+    </div>
+
+    <audio loop="" preload="auto" id="audio">
+        <source type="audio/mp3">
+    </audio>
+    <!-- src="https://cdn.discordapp.com/attachments/1099387636264730644/1179679650457337887/DeeBaby_Ft_Mg_Lil_Bubba_-_Going_Big.mp3?ex=657aa94a&is=6568344a&hm=b2cd95ce787b8b3e1f33c9b567b0e2efd98951452070498f1f1d960f648bfe7c&" -->
+    <video id="vid" autoplay loop muted playsinline>
+        <source src="" type="video/mp4">
+    </video>
+
+    <div class="mute-pause-ctnr">
+        <i class="fas fa-pause"></i>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="proceed-button" onclick="removeOverlay(); playMusic()">
+            <p class="enter" style="font-family: 'Array'; color: rgb(255, 255, 255) !important;">[CLICK HERE]</p>
+        </div>
+    </div>
+
+    <script>
+        // MUSIC SCRIPT
+        const iconContainer = document.querySelector(".mute-pause-ctnr");
+        const icon = iconContainer.querySelector("i");
+        let isPaused = true;
+        const audio = document.getElementById("audio");
+
+        iconContainer.addEventListener("click", () => {
+            if (isPaused) {
+                icon.classList.remove("fa-pause");
+                icon.classList.add("fa-play");
+                audio.pause();
+            } else {
+                icon.classList.remove("fa-play");
+                icon.classList.add("fa-pause");
+                audio.play();
+            }
+            isPaused = !isPaused;
+        });
+
+        function removeOverlay() {
+            var overlay = document.getElementById("overlay");
+            overlay.style.display = "none";
+            audio.play();
+            isPaused = false;
+            icon.classList.remove("fa-play");
+            icon.classList.add("fa-pause");
+        }
+
+        // EYE VISIBILITY SCRIPT
+        document.addEventListener('DOMContentLoaded', function () {
+            var eyeContainer = document.querySelector('.eye-container');
+            var eyeNumber = document.querySelector('.eye-number');
+
+            eyeNumber.style.display = 'none';
+
+            eyeContainer.addEventListener('click', function () {
+                eyeNumber.style.display = eyeNumber.style.display === 'none' ? 'block' : 'none';
+                setTimeout(function () {
+                    eyeNumber.style.display = 'none';
+                }, 5000);
+            });
+        });
+
+        // TITLE SCRIPT
+        let counter = 0;
+        let Title = '@<%= profile.userID %>';
+        let direction = true;
+        aniTitle = setInterval(function () {
+            if (counter == Title.length) direction = false;
+            if (counter == false) direction = true;
+            counter = (direction == true) ? ++counter : --counter;
+            newtitle = (counter == 0) ? "" : Title.slice(0, counter);
+            document.title = 'twiz.lol ~ ' + newtitle;
+        }, 380);
+    </script>
+</body>
+
+</html>

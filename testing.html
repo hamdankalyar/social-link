@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Container</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
         @font-face {
-            font-family: "Satoshi";
-            src: url("SatoshiBlack.ttf") format("truetype");
+            font-family: 'Satoshi';
+            src: url('SatoshiBlack.ttf') format('truetype');
         }
 
         @font-face {
-            font-family: "Array";
-            src: url("Array.ttf") format("truetype");
+            font-family: 'Array';
+            src: url('Array.ttf') format('truetype');
         }
 
         body {
@@ -29,13 +29,13 @@
             align-items: center;
             height: 100vh;
             background-color: #151617;
-            font-family: "Nanum Gothic", sans-serif;
+            font-family: 'Nanum Gothic', sans-serif;
         }
 
         .container {
             width: 94%;
             max-width: 500px;
-            padding: 20px 1px 0px;
+            padding: 20px 1px 40px;
             border-radius: 57.5px;
             background-color: #121314;
             display: center;
@@ -62,15 +62,15 @@
             text-align: center;
 
             font-weight: 650;
-            font-family: "Nanum Gothic", sans-serif;
+            font-family: 'Nanum Gothic', sans-serif;
             font-style: normal;
             color: rgb(255, 255, 255) !important;
             margin-top: 0px;
             flex-basis: 54%;
-            margin: 0;
 
             display: flex;
             justify-content: flex-end;
+
         }
 
         .username-container {
@@ -78,6 +78,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
+
         }
 
         .biography {
@@ -86,7 +87,7 @@
             text-align: center;
             margin: 10px 0;
             font-weight: 300;
-            font-family: "Nanum Gothic", sans-serif;
+            font-family: 'Nanum Gothic', sans-serif;
         }
 
         .line {
@@ -105,6 +106,7 @@
         }
 
         .social-icon {
+
             color: #fff;
             font-size: 29px;
             transition: color 0.3s ease;
@@ -121,90 +123,90 @@
         }
 
         .discord {
-            color: #5865f2;
-            filter: drop-shadow(2px 2px 7px #5865f2);
-            transition: all 0.2s ease-in-out;
+            color: #5865F2;
+            filter: drop-shadow(2px 2px 7px #5865F2);
+            transition: all .2s ease-in-out
         }
 
         .tiktok {
             font-size: 36.5px !important;
             margin-left: -5.5px !important;
-            color: #f7f7f7;
-            filter: drop-shadow(2px 2px 7px #f7f7f7);
-            transition: all 0.2s ease-in-out;
+            color: #F7F7F7;
+            filter: drop-shadow(2px 2px 7px #F7F7F7);
+            transition: all .2s ease-in-out
         }
 
         .github {
             color: #696969;
             filter: drop-shadow(2px 2px 7px #696969);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .spotify {
-            color: #1db954;
-            filter: drop-shadow(2px 2px 7px #1db954);
-            transition: all 0.2s ease-in-out;
+            color: #1DB954;
+            filter: drop-shadow(2px 2px 7px #1DB954);
+            transition: all .2s ease-in-out
         }
 
         .instagram {
             color: #d62976;
             filter: drop-shadow(2px 2px 7px #d62976);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .twitter {
-            color: #1da1f2;
-            filter: drop-shadow(2px 2px 7px #1da1f2);
-            transition: all 0.2s ease-in-out;
+            color: #1DA1F2;
+            filter: drop-shadow(2px 2px 7px #1DA1F2);
+            transition: all .2s ease-in-out
         }
 
         .paypal {
-            color: #002e83;
-            filter: drop-shadow(2px 2px 7px #002e83);
-            transition: all 0.2s ease-in-out;
+            color: #002E83;
+            filter: drop-shadow(2px 2px 7px #002E83);
+            transition: all .2s ease-in-out
         }
 
         .telegram {
-            color: #2e9cd6;
-            filter: drop-shadow(2px 2px 7px #2e9cd6);
-            transition: all 0.2s ease-in-out;
+            color: #2E9CD6;
+            filter: drop-shadow(2px 2px 7px #2E9CD6);
+            transition: all .2s ease-in-out;
             margin-left: -4px;
         }
 
         .youtube {
             color: #ff0000e1;
             filter: drop-shadow(2px 2px 7px #ff0000e1);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .twitch {
             color: #3000a1b4;
             filter: drop-shadow(2px 2px 7px #3000a1e1);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .steam {
             color: #07095f;
             filter: drop-shadow(2px 2px 7px #07085f80);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .snapchat {
             color: #faf765;
             filter: drop-shadow(2px 2px 7px #faf765);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .soundcloud {
             color: #a57e12;
             filter: drop-shadow(2px 2px 7px #a57e12);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .crypto {
             color: #a57e12;
             filter: drop-shadow(2px 2px 7px #a57e12);
-            transition: all 0.2s ease-in-out;
+            transition: all .2s ease-in-out
         }
 
         .youtube:hover,
@@ -226,7 +228,19 @@
             transform: scale(1.12);
         }
 
-
+        .eye-container {
+            position: fixed !important;
+            bottom: -7px;
+            left: 20px;
+            background-color: #ffffff0d;
+            border: 1px solid #ffffff0d;
+            border-width: 1.5px;
+            border-radius: 48.6px;
+            display: flex;
+            padding: 2.5px 10px 1.5px;
+            cursor: pointer;
+            margin: 2px 10px 20px auto;
+        }
 
         .eye-icon {
             color: #ffffff;
@@ -248,7 +262,7 @@
             font-size: 18.12px;
             color: #ffffff;
             transition: color 0.3s ease;
-            font-family: "Nanum Gothic", sans-serif;
+            font-family: 'Nanum Gothic', sans-serif;
             font-weight: 500;
             transition: opacity 0.5s ease;
         }
@@ -298,6 +312,7 @@
             background-color: #ffffff0d;
         }
 
+
         .mute-pause-ctnr:hover i {
             color: rgb(204, 204, 204);
             animation: none;
@@ -323,10 +338,10 @@
             transform: scale(1.12);
         }
 
-        /* .sparkle {
-        background-image: url(https://cdn.discordapp.com/attachments/975129514499772516/1043554950350897242/sparkle.gif);
-        color: white;
-      } */
+        .sparkle {
+            background-image: url(https://cdn.discordapp.com/attachments/975129514499772516/1043554950350897242/sparkle.gif);
+            color: white;
+        }
 
         .overlay {
             position: fixed;
@@ -340,7 +355,7 @@
             z-index: 9999;
             backdrop-filter: blur(13px);
             -webkit-backdrop-filter: blur(13px);
-            background-color: rgba(0, 0, 0, 0.775) !important;
+            background-color: rgba(0, 0, 0, .775) !important;
             -webkit-user-select: none;
             -moz-user-select: none;
             user-select: none;
@@ -388,14 +403,13 @@
         body {
             background-color: #09090b !important;
             color: #bb68e29c;
-            background-image: url("https://media.tenor.com/_64uTl-XM5EAAAAC/juice-wrld.gif");
+            background-image: url('https://media.tenor.com/_64uTl-XM5EAAAAC/juice-wrld.gif');
             background-size: cover;
             background-repeat: repeat;
         }
 
         * {
-            cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur) 16 16,
-                auto !important;
+            cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur) 16 16, auto !important;
         }
 
         .container {
@@ -424,13 +438,13 @@
         }
 
         .discord-widget {
-            background-color: #2c2d32;
+            background-color: #2C2D32;
             width: 70%;
             margin: 10px auto;
             height: 60px;
             display: flex;
             align-items: center;
-            border-radius: 12px;
+            border-radius: 12px
         }
 
         .discord-widget img {
@@ -461,125 +475,76 @@
         .badges-name {
             display: flex;
             align-items: center;
-            /* height: 30px; */
+            height: 30px;
             flex-basis: 46%;
         }
 
         .badge-container {
             display: flex;
-            background-color: #191b1d;
+            background-color: #191B1D;
             align-items: center;
-            /* height: 25px; */
+            height: 25px;
             border-radius: 10px;
             /* width: 100px; */
             justify-content: space-evenly;
             margin-left: 20px;
-            flex-wrap: wrap;
-            gap: 3px;
-            padding: 5px;
         }
 
         .fixer {
-            width: 90%;
-            /* height: 33px; */
+            width: 260px;
+            height: 33px;
             display: flex;
         }
 
-        .tooltip-badge {
-            position: relative;
-            display: inline-block;
-            margin-right: 5px;
-            /* Adjust the spacing between badges */
+        /* toottip code */
+        .tooltip:hover::before,
+        .views2tooltip:hover::before {
+            opacity: 1 !important;
         }
 
-        .tooltip-badge::before {
+        .tooltip::before,
+        .views2tooltip::before {
             content: attr(data-tooltip);
             position: absolute;
             bottom: 100%;
             left: 50%;
             transform: translateX(-50%);
-            padding: 4px 3px 4px;
-            background-color: #000000;
+            padding: 9px 3px 9px;
+            background-color: #000000 !important;
             color: #fff;
-            font-size: 10px;
+            margin-top: 10px;
+            font-size: 12px;
             border-radius: 4px;
-            opacity: 0;
+            opacity: 0 !important;
             pointer-events: none;
-            transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out !important;
         }
-
-        .tooltip-badge:hover::before {
-            opacity: 1;
-        }
-
-        .eye-container {
-
-            background-color: #ffffff0d;
-            border: 1px solid #ffffff0d;
-            border-width: 1.5px;
-            border-radius: 48.6px;
-            display: flex;
-            padding: 2.5px 10px 1.5px;
-            cursor: pointer;
-            margin: 2px 10px 20px auto;
-            width: fit-content;
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        /* Rest of your styles remain unchanged */
     </style>
 </head>
 
 <body>
-    <div class="container" style="
-        backdrop-filter: blur(52px);
-        background-color: rgba(0, 0, 0, 0.1) !important;
-      ">
+    <div class="container" style="backdrop-filter: blur(52px); background-color: rgba(0, 0, 0, 0.1) !important;">
         <div class="username-container">
             <div class="profile-container">
-                <img class="profile-picture" src="https://media.tenor.com/SHt_qTrwxtcAAAAd/hide-sink.gif" alt="" />
+                <img class="profile-picture" src="https://media.tenor.com/SHt_qTrwxtcAAAAd/hide-sink.gif" alt="">
             </div>
             <div class="fixer">
-                <p class="username sparkle" style="color: rgb(255, 255, 255) !important">
-                    ✞
-                </p>
+
+                <p class="username sparkle" style="color: rgb(255, 255, 255) !important;">✞</p>
                 <div class="badges-name">
                     <div class="badge-container">
-                        <div class="tooltip-badge" data-tooltip="Owner">
-                            <img src="./badges/png/owner.PNG" width="16px" height="16px" alt="owner" title="owner" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Premium">
-                            <img src="./badges/gif/premium.GIF" width="16px" height="16px" alt="premium"
-                                title="premium" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Verified">
-                            <img src="./badges/png/verified.PNG" width="16px" height="16px" alt="verified"
-                                title="verified" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Booster">
-                            <img src="./badges/png/booster.PNG" width="16px" height="16px" alt="booster"
-                                title="booster" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Staff">
-                            <img src="./badges/gif/staff.GIF" width="16px" height="16px" alt="staff" title="staff" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="OG">
-                            <img src="./badges/gif/og.GIF" width="16px" height="16px" alt="OG" title="OG" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Developer">
-                            <img src="./badges/gif/developer.GIF" width="16px" height="16px" alt="developer"
-                                title="developer" />
-                        </div>
+                        <img src="./badges/gif/og.GIF" class="views2tooltip" width="16px" height="16px" alt="OG"
+                            data-tootltip="OG">
+                        <img src="./badges/gif/developer.GIF" width="16px" height="16px" alt="developer"
+                            title="developer">
+                        <img src="./badges/gif/premium.GIF" width="16px" height="16px" alt="premium" title="premium">
+                        <img src="./badges/gif/staff.GIF" width="16px" height="16px" alt="staff" title="staff">
                     </div>
+
                 </div>
             </div>
-
-
-            <p class="biography" style="color: rgba(255, 255, 255, 0.5) !important">
-                ily |
-            </p>
-            <hr class="line" />
+            <p class="biography" style="color: rgba(255, 255, 255, 0.5) !important;">ily | </p>
+            <hr class="line">
             <div class="social-container">
                 <div class="social-item">
                     <a href="YOUR_YOUTUBE_LINK" class="social-icon youtube" aria-label="YouTube">
@@ -612,31 +577,23 @@
                         <span class="iconify" data-icon="fontisto:github"></span>
                     </a>
                 </div>
-                <div class="social-item">
-                    <a href="YOUR_SNAPCHAT_LINK" class="social-icon snapchat" aria-label="Snapchat">
+                <div class="social-item"><a href="YOUR_SNAPCHAT_LINK" class="social-icon snapchat"
+                        aria-label="Snapchat">
                         <span class="iconify" data-icon="basil:snapchat-solid"></span>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="YOUR_FACEBOOK_LINK" class="social-icon facebook" aria-label="Facebook">
+                    </a></div>
+                <div class="social-item"><a href="YOUR_FACEBOOK_LINK" class="social-icon facebook"
+                        aria-label="Facebook">
                         <span class="iconify" data-icon="mdi:facebook"></span>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="YOUR_PAYPAL_LINK" class="social-icon paypal" aria-label="PayPal">
+                    </a></div>
+                <div class="social-item"><a href="YOUR_PAYPAL_LINK" class="social-icon paypal" aria-label="PayPal">
                         <span class="iconify" data-icon="ic:twotone-paypal"></span>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="YOUR_CASHAPP_LINK" class="social-icon cashapp" aria-label="CashApp">
+                    </a></div>
+                <div class="social-item"><a href="YOUR_CASHAPP_LINK" class="social-icon cashapp" aria-label="CashApp">
                         <span class="iconify" data-icon="simple-icons:cashapp"></span>
-                    </a>
-                </div>
-                <div class="social-item">
-                    <a href="YOUR_CUSTOM_LINK" class="social-icon custom" aria-label="Custom">
+                    </a></div>
+                <div class="social-item"><a href="YOUR_CUSTOM_LINK" class="social-icon custom" aria-label="Custom">
                         <span class="iconify" data-icon="pajamas:earth"></span>
-                    </a>
-                </div>
+                    </a></div>
                 <div class="social-item">
                     <a href="YOUR_INSTAGRAM_LINK" class="social-icon instagram" aria-label="Instagram">
                         <span class="iconify" data-icon="ri:instagram-fill"></span>
@@ -648,10 +605,11 @@
                     </a>
                 </div>
                 <!-- Add more social icons as needed -->
+
             </div>
         </div>
         <div class="discord-widget">
-            <img src="avatar.jpeg" alt="" />
+            <img src="avatar.jpeg" alt="">
             <div class="discord-heading-box">
                 <span>Wiz6</span>
                 <div class="discord-icons">
@@ -660,25 +618,23 @@
                 </div>
             </div>
         </div>
-        <div class="eye-wrapper">
-
-            <div class="eye-container">
-                <div class="eye-icon">
-                    <span class="iconify" data-icon="feather:eye"></span>
-                </div>
-                <span class="eye-number">50</span>
+        <div class="eye-container">
+            <div class="eye-icon">
+                <span class="iconify" data-icon="feather:eye"></span>
             </div>
+            <span class="eye-number">50</span>
         </div>
+
     </div>
 
     <audio loop="" preload="auto" id="audio">
         <source
             src="https://cdn.discordapp.com/attachments/1099387636264730644/1179679650457337887/DeeBaby_Ft_Mg_Lil_Bubba_-_Going_Big.mp3?ex=657aa94a&is=6568344a&hm=b2cd95ce787b8b3e1f33c9b567b0e2efd98951452070498f1f1d960f648bfe7c&"
-            type="audio/mp3" />
+            type="audio/mp3">
     </audio>
 
     <video id="vid" autoplay loop muted playsinline>
-        <source src="" type="video/mp4" />
+        <source src="" type="video/mp4">
     </video>
 
     <div class="mute-pause-ctnr">
@@ -687,9 +643,7 @@
 
     <div class="overlay" id="overlay">
         <div class="proceed-button" onclick="removeOverlay(); playMusic()">
-            <p class="enter" style="font-family: 'Array'; color: rgb(255, 255, 255) !important">
-                [CLICK HERE]
-            </p>
+            <p class="enter" style="font-family: 'Array'; color: rgb(255, 255, 255) !important;">[CLICK HERE]</p>
         </div>
     </div>
 
@@ -723,31 +677,30 @@
         }
 
         // EYE VISIBILITY SCRIPT
-        document.addEventListener("DOMContentLoaded", function () {
-            var eyeContainer = document.querySelector(".eye-container");
-            var eyeNumber = document.querySelector(".eye-number");
+        document.addEventListener('DOMContentLoaded', function () {
+            var eyeContainer = document.querySelector('.eye-container');
+            var eyeNumber = document.querySelector('.eye-number');
 
-            eyeNumber.style.display = "none";
+            eyeNumber.style.display = 'none';
 
-            eyeContainer.addEventListener("click", function () {
-                eyeNumber.style.display =
-                    eyeNumber.style.display === "none" ? "block" : "none";
+            eyeContainer.addEventListener('click', function () {
+                eyeNumber.style.display = eyeNumber.style.display === 'none' ? 'block' : 'none';
                 setTimeout(function () {
-                    eyeNumber.style.display = "none";
+                    eyeNumber.style.display = 'none';
                 }, 5000);
             });
         });
 
         // TITLE SCRIPT
         let counter = 0;
-        let Title = "@<%= profile.userID %>";
+        let Title = '@<%= profile.userID %>';
         let direction = true;
         aniTitle = setInterval(function () {
             if (counter == Title.length) direction = false;
             if (counter == false) direction = true;
-            counter = direction == true ? ++counter : --counter;
-            newtitle = counter == 0 ? "" : Title.slice(0, counter);
-            document.title = "twiz.lol ~ " + newtitle;
+            counter = (direction == true) ? ++counter : --counter;
+            newtitle = (counter == 0) ? "" : Title.slice(0, counter);
+            document.title = 'twiz.lol ~ ' + newtitle;
         }, 380);
     </script>
 </body>

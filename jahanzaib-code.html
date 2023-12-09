@@ -35,7 +35,7 @@
         .container {
             width: 94%;
             max-width: 500px;
-            padding: 20px 1px 0px;
+            padding: 20px 1px 40px;
             border-radius: 57.5px;
             background-color: #121314;
             display: center;
@@ -64,13 +64,6 @@
             font-weight: 650;
             font-family: "Nanum Gothic", sans-serif;
             font-style: normal;
-            color: rgb(255, 255, 255) !important;
-            margin-top: 0px;
-            flex-basis: 54%;
-            margin: 0;
-
-            display: flex;
-            justify-content: flex-end;
         }
 
         .username-container {
@@ -226,7 +219,19 @@
             transform: scale(1.12);
         }
 
-
+        .eye-container {
+            position: fixed !important;
+            bottom: -7px;
+            left: 20px;
+            background-color: #ffffff0d;
+            border: 1px solid #ffffff0d;
+            border-width: 1.5px;
+            border-radius: 48.6px;
+            display: flex;
+            padding: 2.5px 10px 1.5px;
+            cursor: pointer;
+            margin: 2px 10px 20px auto;
+        }
 
         .eye-icon {
             color: #ffffff;
@@ -323,10 +328,10 @@
             transform: scale(1.12);
         }
 
-        /* .sparkle {
-        background-image: url(https://cdn.discordapp.com/attachments/975129514499772516/1043554950350897242/sparkle.gif);
-        color: white;
-      } */
+        .sparkle {
+            background-image: url(https://cdn.discordapp.com/attachments/975129514499772516/1043554950350897242/sparkle.gif);
+            color: white;
+        }
 
         .overlay {
             position: fixed;
@@ -461,73 +466,58 @@
         .badges-name {
             display: flex;
             align-items: center;
-            /* height: 30px; */
-            flex-basis: 46%;
+            height: 30px;
         }
 
         .badge-container {
             display: flex;
             background-color: #191b1d;
             align-items: center;
-            /* height: 25px; */
+            height: auto;
             border-radius: 10px;
-            /* width: 100px; */
-            justify-content: space-evenly;
+            /* width: auto; */
+            justify-content: flex-start;
             margin-left: 20px;
+            margin-top: 7%;
+            gap: 10px;
+            padding: 5px 10px;
             flex-wrap: wrap;
-            gap: 3px;
-            padding: 5px;
         }
 
         .fixer {
-            width: 90%;
-            /* height: 33px; */
+            width: 100%;
             display: flex;
+            /* justify-content: center; */
+            margin-left: 97%;
+            align-items: center;
         }
 
-        .tooltip-badge {
-            position: relative;
-            display: inline-block;
-            margin-right: 5px;
-            /* Adjust the spacing between badges */
-        }
-
-        .tooltip-badge::before {
-            content: attr(data-tooltip);
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 4px 3px 4px;
-            background-color: #000000;
-            color: #fff;
-            font-size: 10px;
-            border-radius: 4px;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.2s ease-in-out;
-        }
-
-        .tooltip-badge:hover::before {
-            opacity: 1;
-        }
-
-        .eye-container {
-
-            background-color: #ffffff0d;
-            border: 1px solid #ffffff0d;
-            border-width: 1.5px;
-            border-radius: 48.6px;
+        .username {
             display: flex;
-            padding: 2.5px 10px 1.5px;
-            cursor: pointer;
-            margin: 2px 10px 20px auto;
-            width: fit-content;
-            margin-left: 20px;
-            margin-bottom: 15px;
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 38%; */
         }
 
-        /* Rest of your styles remain unchanged */
+        /* img{
+        margin: 0 10%;
+      } */
+        @media (max-width: 460px) {
+            .badge-container {
+                display: grid;
+                /* grid-template-columns: repeat(
+            auto-fill,
+            minmax(calc(33.33% - 10px), 3fr)
+          ); */
+                grid-template-columns: repeat(4, 4fr);
+                background-color: #191b1d;
+                border-radius: 10px;
+                margin-left: 20px;
+                /* margin-top: 7%; */
+                gap: 10px;
+                /* padding: 5px 10px; */
+            }
+        }
     </style>
 </head>
 
@@ -541,41 +531,24 @@
                 <img class="profile-picture" src="https://media.tenor.com/SHt_qTrwxtcAAAAd/hide-sink.gif" alt="" />
             </div>
             <div class="fixer">
-                <p class="username sparkle" style="color: rgb(255, 255, 255) !important">
-                    ✞
-                </p>
                 <div class="badges-name">
+                    <p class="username sparkle" style="color: rgb(255, 255, 255) !important">
+                        ✞
+                    </p>
                     <div class="badge-container">
-                        <div class="tooltip-badge" data-tooltip="Owner">
-                            <img src="./badges/png/owner.PNG" width="16px" height="16px" alt="owner" title="owner" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Premium">
-                            <img src="./badges/gif/premium.GIF" width="16px" height="16px" alt="premium"
-                                title="premium" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Verified">
-                            <img src="./badges/png/verified.PNG" width="16px" height="16px" alt="verified"
-                                title="verified" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Booster">
-                            <img src="./badges/png/booster.PNG" width="16px" height="16px" alt="booster"
-                                title="booster" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Staff">
-                            <img src="./badges/gif/staff.GIF" width="16px" height="16px" alt="staff" title="staff" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="OG">
-                            <img src="./badges/gif/og.GIF" width="16px" height="16px" alt="OG" title="OG" />
-                        </div>
-                        <div class="tooltip-badge" data-tooltip="Developer">
-                            <img src="./badges/gif/developer.GIF" width="16px" height="16px" alt="developer"
-                                title="developer" />
-                        </div>
+                        <img src="./badges/png/owner.PNG" width="16px" height="16px" alt="owner" title="owner" />
+                        <img src="./badges/gif/premium.GIF" width="16px" height="16px" alt="premium" title="premium" />
+
+                        <img src="./badges/png/verified.PNG" width="16px" height="16px" alt="verified"
+                            title="verified" />
+                        <img src="./badges/png/booster.PNG" width="16px" height="16px" alt="booster" title="booster" />
+                        <img src="./badges/gif/staff.GIF" width="16px" height="16px" alt="staff" title="staff" />
+                        <img src="./badges/gif/og.GIF" width="16px" height="16px" alt="OG" title="OG" />
+                        <img src="./badges/gif/developer.GIF" width="16px" height="16px" alt="developer"
+                            title="developer" />
                     </div>
                 </div>
             </div>
-
-
             <p class="biography" style="color: rgba(255, 255, 255, 0.5) !important">
                 ily |
             </p>
@@ -660,14 +633,11 @@
                 </div>
             </div>
         </div>
-        <div class="eye-wrapper">
-
-            <div class="eye-container">
-                <div class="eye-icon">
-                    <span class="iconify" data-icon="feather:eye"></span>
-                </div>
-                <span class="eye-number">50</span>
+        <div class="eye-container">
+            <div class="eye-icon">
+                <span class="iconify" data-icon="feather:eye"></span>
             </div>
+            <span class="eye-number">50</span>
         </div>
     </div>
 
